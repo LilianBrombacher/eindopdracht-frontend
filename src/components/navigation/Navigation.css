@@ -2,7 +2,7 @@
     flex-basis: 1000px;
     margin: 0 auto;
     display: flex;
-    /*justify-content: flex-end;*/
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -10,9 +10,12 @@ nav {
     width: 100%;
     background-color: #646cff;
     color: white;
+    text-shadow: #41434a 0.5px 0.5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 60px;
+
 }
 
 nav a,
@@ -22,15 +25,15 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: white;
+    color: #e0e2ff;
 }
 
 ul {
     list-style-type: none;
-    flex-basis: 550px;
+    flex-basis: 300px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 .active-menu-link {
     /*border-bottom: 1px solid whitesmoke;*/
