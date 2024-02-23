@@ -3,6 +3,7 @@ import './App.css'
 import Register from "./pages/register/Register.jsx";
 import Login from "./pages/login/Login.jsx";
 import Home from "./pages/home/Home.jsx";
+import Navigation from "./components/navigation/Navigation.jsx";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
 
         <BrowserRouter>
+            <Navigation />
             <Routes>
 
                 <Route path='/' element={<Home/>}/>
