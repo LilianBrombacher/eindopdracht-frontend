@@ -1,5 +1,5 @@
 .nav-container {
-    flex-basis: 1000px;
+    flex-basis: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -13,8 +13,9 @@ nav {
     text-shadow: #41434a 0.5px 0.5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     height: 60px;
+    padding: 0 40px 0 40px;
 
 }
 

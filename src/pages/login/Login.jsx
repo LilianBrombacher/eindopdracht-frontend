@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Login() {
     return (
-        <section className="form-parent">
+        <section className="container">
             <form className="form">
                 <h1>Inloggen</h1>
 

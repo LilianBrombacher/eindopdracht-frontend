@@ -2,7 +2,7 @@ import './Register.css'
 import { Link } from 'react-router-dom'
 function Register() {
     return (
-        <section className="form-parent">
+        <section className="container">
             <form className="form">
                 <h1>Maak een account aan</h1>
                 <input className="inp" type="text" placeholder="Naam" name="name"/>

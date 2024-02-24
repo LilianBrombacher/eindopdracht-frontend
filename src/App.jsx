@@ -4,6 +4,7 @@ import Register from "./pages/register/Register.jsx";
 import Login from "./pages/login/Login.jsx";
 import Home from "./pages/home/Home.jsx";
 import Navigation from "./components/navigation/Navigation.jsx";
+import Error from "./components/Error.jsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/login' element={<Login/>}/>
+                <Route path='*' element={<Error/>}/>
 
             </Routes>
         </BrowserRouter>
