@@ -2,17 +2,18 @@
     flex-basis: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
+    position: fixed;
 }
 
 nav {
     width: 100%;
-    background-color: #646cff;
+    background-color: transparent;
     color: white;
     text-shadow: #41434a 0.5px 0.5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     height: 60px;
     padding: 0 40px 0 40px;
@@ -27,6 +28,10 @@ nav a:visited {
 
 nav a:hover {
     color: #e0e2ff;
+}
+h4{
+    font-size: 12px;
+    margin-right: 50px;
 }
 
 ul {
