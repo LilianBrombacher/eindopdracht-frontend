@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom'
 
+
 function Login() {
     return (
         <section className="container">
             <form className="form">
-                <h1>Inloggen</h1>
+                <h1>Sign in</h1>
 
-                <input className="inp" type="email" placeholder="Emailadres" name="Email"/>
+                <input className="inp" type="email" placeholder="Email address" name="Email"/>
 
-                <input className="inp" type="password" placeholder="Wachtwoord" name="password"/>
+                <input className="inp" type="password" placeholder="Password" name="password"/>
 
-                <button className="btn" type="submit">Log in</button>
+                <button className="btn" type="submit">Sign in</button>
 
-                <p>Heb je nog geen account? Dan kun je je <Link to='/register'>hier</Link> registreren</p>
+                <p>Don't have an account? You can register <Link to='/register'>here</Link>.</p>
 
             </form>
 

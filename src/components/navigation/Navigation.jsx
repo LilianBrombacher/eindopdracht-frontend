@@ -1,42 +1,43 @@
 
 import './Navigation.css';
 import { NavLink } from "react-router-dom";
+import { UserCircle, HeartStraight } from "@phosphor-icons/react"
 
 function Navigation() {
     return (
         <nav>
             <div className="nav-container">
-                <h4>WorldWide Office Hours</h4>
+                <h4>
+                    <NavLink
+                    className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
+                    to="/">
+                    WorldWide Office Hours
+                </NavLink>
+                    </h4>
 
-                <ul>
+                <ul className="navbar-items">
+                    {/*<li>*/}
+                    {/*    <NavLink*/}
+                    {/*        className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}*/}
+                    {/*        to="/">*/}
+                    {/*        Home*/}
+                    {/*    </NavLink>*/}
+                    {/*</li>*/}
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
-                            to="/">
-                            Home
+                            to="/favorites">
+                            <HeartStraight size={32} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
                             to="/login">
-                            Log in
+                            <UserCircle size={32} />
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink
-                            className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
-                            to="/register">
-                            Registeren
-                        </NavLink>
-                    </li>
-                    {/*<li>*/}
-                    {/*    <NavLink*/}
-                    {/*        className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}*/}
-                    {/*        to="/whitening">*/}
-                    {/*        Tanden bleken*/}
-                    {/*    </NavLink>*/}
-                    {/*</li>*/}
+
                 </ul>
             </div>
         </nav>

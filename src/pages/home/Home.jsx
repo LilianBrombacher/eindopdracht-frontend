@@ -3,24 +3,23 @@ import './Home.css'
 
 function Home() {
     return (
-    <main className= "page-container">
-        {/*<span className="image-wrapper">*/}
-        {/*  /!*<header className="title" title= "WorldWide Office Hours"/>*!/*/}
-        {/*/!*<h1>WorldWide Office Hours</h1>*!/*/}
-        {/*/!*<img src={background} alt="worldmap"/>*!/*/}
-        {/*    </span>*/}
-        <header>
-        <div className="hero-content">
-            <h1 className="hero-title">Worldwide Office Hours</h1>
-            <p className="hero-subtitle">Is my colleague available right now?</p>
-        <form className="hero-form">
+    <main >
+        <header className= "header-container">
+        <div className="header-content">
+            <h1 className="header-title">Worldwide Office Hours</h1>
+            <p className="header-subtitle">Is my colleague available right now?</p>
+        <form className="header-form">
             <label>
-                <input className="hero-input" type="text" placeholder="Type city"/>
+                <input className="header-input" type="text" placeholder="Type city"/>
             </label>
-            <button type="button" className="hero-btn">Search</button>
+            <button type="button" className="header-btn">Search</button>
         </form>
         </div>
         </header>
+        <div className="home-text">
+            {/*<h2>Search for a country</h2>*/}
+
+        </div>
 
     </main>
 

@@ -4,16 +4,16 @@ function Register() {
     return (
         <section className="container">
             <form className="form">
-                <h1>Maak een account aan</h1>
-                <input className="inp" type="text" placeholder="Naam" name="name"/>
+                <h1>Make an account</h1>
+                <input className="inp" type="text" placeholder="Name" name="name"/>
 
-                <input className="inp" type="email" placeholder="Emailadres" name="Email"/>
+                <input className="inp" type="email" placeholder="Email address" name="Email"/>
 
-                <input className="inp" type="password" placeholder="Wachtwoord" name="password"/>
+                <input className="inp" type="password" placeholder="Password" name="password"/>
 
-                <button className="btn" type="submit">Aanmelden</button>
+                <button className="btn" type="submit">Register</button>
 
-                <p>Heb je al een account? Dan kun je <Link to='/login'>hier</Link> inloggen</p>
+                <p>Already have an account? Sign in <Link to='/login'>here</Link>.</p>
 
             </form>
 
