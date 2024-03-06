@@ -33,11 +33,16 @@ function Register() {
         toggleError(false);
         toggleLoading(true);
 
+
         try {
             const response = await axios.post("https://api.datavortex.nl/worldwideeofficehours/users", {
                 email: email,
                 password: password,
                 username: username,
+                Headers: {
+                    'Content-Type': 'application/json',
+                    'X-Api-Key':'worldwideeofficehours:KK6eHe81ZddwgqIr5LaG',
+        }
                 // info: "testinfo",
                 // authorities: [
                 //     {
