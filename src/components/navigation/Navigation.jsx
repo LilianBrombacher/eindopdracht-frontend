@@ -16,25 +16,18 @@ function Navigation() {
                     </h4>
 
                 <ul className="navbar-items">
-                    {/*<li>*/}
-                    {/*    <NavLink*/}
-                    {/*        className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}*/}
-                    {/*        to="/">*/}
-                    {/*        Home*/}
-                    {/*    </NavLink>*/}
-                    {/*</li>*/}
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
                             to="/favorites">
-                            <HeartStraight size={32} />
+                            <HeartStraight size={30} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             className={({ isActive }) => isActive ? 'active-menu-link': 'default-menu-link'}
                             to="/login">
-                            <UserCircle size={32} />
+                            <UserCircle size={30} />
                         </NavLink>
                     </li>
 
