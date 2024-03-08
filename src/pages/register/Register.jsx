@@ -5,28 +5,12 @@ import axios from 'axios';
 
 function Register() {
 
-    // const [userDetails, setUserDetails] = useState({
-    //     name: "",
-    //     email: "",
-    //     password: "",
-    // })
     const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, toggleError] = useState(false);
     const [loading, toggleLoading] = useState(false);
     const navigate = useNavigate();
-
-    // function handleInput(event){
-    //
-    //     setUserDetails(prevState => {
-    //
-    //         return {...prevState, [event.target.name]: event.target.value};
-    //
-    //     })
-    //     // console.log(event.target.name)
-    //     // console.log(event.target.value)
-    // }
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -39,17 +23,12 @@ function Register() {
                 email: email,
                 password: password,
                 username: username,
-                Headers: {
+            }, {
+                headers: {
                     'Content-Type': 'application/json',
-                    'X-Api-Key':'worldwideeofficehours:KK6eHe81ZddwgqIr5LaG',
-        }
-                // info: "testinfo",
-                // authorities: [
-                //     {
-                //         authority: "USER"
-                //     }
-                // ]
-            });
+                    'X-Api-Key': 'worldwideeofficehours:KK6eHe81ZddwgqIr5LaG',
+                }
+            })
             console.log(response)
             navigate('/login');
         } catch(e) {
@@ -59,17 +38,6 @@ function Register() {
 
         toggleLoading(false);
     }
-
-    // function handleSubmit(event){
-    //
-    //     event.preventDefault();
-    //     console.log(userDetails)
-    //
-    //     fetch("https://api.datavortex.nl/worldwideofficehours", {
-    //
-    //     })
-    //
-    // }
 
     return (
         <section className="container">
@@ -86,6 +54,7 @@ function Register() {
                 <input className="inp" type="password" required minLength={8}
                        onChange={(e => setPassword(e.target.value))}
                        placeholder="Password" name="password" value={password}/>
+
                 {error && <p className="error">This account already exists</p>}
 
                 <button className="btn" type="submit" disabled={loading}>
