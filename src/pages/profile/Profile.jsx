@@ -53,7 +53,7 @@ function Profile() {
                     <p>{profileData.content}</p>
                 </section>
             }
-                <button onClick={handleLogout}>Logout</button>
+                <button onClick={handleLogout}>Sign out</button>
 
             <p>Back to <Link to="/">Homepage</Link></p>
             </section>
